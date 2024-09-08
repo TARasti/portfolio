@@ -6,6 +6,7 @@ Commands: 1: about - Show info,
 3: contact - Show contact information, 
 4: skills - Show skills information, 
 5: clear - for clearing screen.
+6: exit - for closing terminal.
 Commonds for navigating through website using 'open' keyword i.e open home;
 1: home
 2: projects

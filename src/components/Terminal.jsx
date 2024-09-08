@@ -1,10 +1,9 @@
-import React, { useContext, useRef, useState } from 'react';
-import '../css/Terminal.css'; // Assuming this path is correct
-import { ABOUT_ME, SKILLS, TERMINAL_COMMANDS } from '../constants'; // Import any constant data
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import '../css/Terminal.css';
+import { ABOUT_ME, SKILLS, TERMINAL_COMMANDS } from '../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { AppContextData } from '../contexts/AppContexts';
-import { ROUTES_PREFIX } from '../constants';
 import { useNavigateTo } from '../hooks/useNavigateTo';
 
 const Terminal = () => {
@@ -38,7 +37,8 @@ const Terminal = () => {
     const handleClose = () => {
         setInput('');
         setHistory([]);
-        appContextData.setAppData(prev => ({...prev, showTerminal: false}));
+        appContextData.setAppData(prev => ({ ...prev, showTerminal: false }));
+        return null;
     }
 
     const executeCommand = (command) => {
@@ -57,6 +57,8 @@ const Terminal = () => {
                 return 'Opening projects...';
             case 'clear':
                 return '';
+            case 'exit':
+                return handleClose();
             case 'help':
                 return TERMINAL_COMMANDS;
             default:
@@ -68,12 +70,18 @@ const Terminal = () => {
         if (inputRef.current) {
             inputRef.current.focus();
         }
-    };;
+    };
+
+    useEffect(() => {
+        if (terminalRef.current) {
+            terminalRef.current.scrollTop = terminalRef.current.scrollHeight; 
+        }
+    }, [history]);
 
     return (
         <div className="terminal" ref={terminalRef} onClick={handleTerminalClick}>
             <div className='d-flex justify-content-end'>
-                <FontAwesomeIcon icon={faXmark} className='cursor-pointer' onClick={handleClose}/>
+                <FontAwesomeIcon icon={faXmark} className='cursor-pointer' onClick={handleClose} />
             </div>
             <div className="terminal-history">
                 {history.map((entry, index) => (
@@ -85,6 +93,7 @@ const Terminal = () => {
             </div>
             <form onSubmit={handleSubmit}>
                 <input
+                    id="input-focus"
                     ref={inputRef}
                     type="text"
                     value={input}
