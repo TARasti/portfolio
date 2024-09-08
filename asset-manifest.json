@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "//tarasti.github.io/portfolio/static/css/main.6f0408a2.css",
-    "main.js": "//tarasti.github.io/portfolio/static/js/main.c83fe97c.js",
+    "main.css": "//tarasti.github.io/portfolio/static/css/main.489fafeb.css",
+    "main.js": "//tarasti.github.io/portfolio/static/js/main.ba89a705.js",
     "static/js/453.1407b060.chunk.js": "//tarasti.github.io/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/card-image.jpg": "//tarasti.github.io/portfolio/static/media/card-image.63a562ea886d16dcfa4a.jpg",
     "static/media/slick.svg": "//tarasti.github.io/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,12 +9,12 @@
     "static/media/slick.ttf": "//tarasti.github.io/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "//tarasti.github.io/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "//tarasti.github.io/portfolio/index.html",
-    "main.6f0408a2.css.map": "//tarasti.github.io/portfolio/static/css/main.6f0408a2.css.map",
-    "main.c83fe97c.js.map": "//tarasti.github.io/portfolio/static/js/main.c83fe97c.js.map",
+    "main.489fafeb.css.map": "//tarasti.github.io/portfolio/static/css/main.489fafeb.css.map",
+    "main.ba89a705.js.map": "//tarasti.github.io/portfolio/static/js/main.ba89a705.js.map",
     "453.1407b060.chunk.js.map": "//tarasti.github.io/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f0408a2.css",
-    "static/js/main.c83fe97c.js"
+    "static/css/main.489fafeb.css",
+    "static/js/main.ba89a705.js"
   ]
 }
