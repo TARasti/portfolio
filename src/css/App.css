@@ -140,9 +140,9 @@ input:focus, textarea:focus, select:focus {
 }
 
 .hover:hover {
-  color: var(--secondary-color);
-  transform: translateY(-5px);
-  cursor: pointer;
+  color: var(--secondary-color) !important;
+  transform: translateY(-5px) !important;
+  cursor: pointer !important;
 }
 
 
@@ -178,4 +178,15 @@ footer {
 
 .custsom-navbar span:hover {
   color: var(--accent-color);
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.font-sx1 {
+  font-size: 1rem;
+  font-weight: 100;
 }

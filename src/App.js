@@ -1,11 +1,14 @@
 import AppContext from './contexts/AppContexts';
 import './css/App.css';
-import HomePage from './pages/HomePage';
+import router from './utilities/Router.jsx';
+import {
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
   return (
     <AppContext>
-      <HomePage />
+      <RouterProvider router={router} />
     </AppContext>
   );
 }

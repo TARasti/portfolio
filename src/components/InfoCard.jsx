@@ -18,7 +18,10 @@ const InfoCard = () => {
         <>
             <div className="card">
                 <div className="card-header">
-                    Tanveer Ahmed Khan - Full Stack Developer
+                    Tanveer Ahmed Khan - Lead Full Stack Developer
+                    <p className='font-sx1 m-0'>
+                        <a className='text-muted hover' target='_blank' rel='noreferrer' href='https://www.sysreforms.com/'>SysReforms International</a>
+                    </p>
                 </div>
                 <div className="card-body d-flex">
                     <img className='card-image' src={cardImage} alt="card-image"></img>

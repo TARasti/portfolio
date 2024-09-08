@@ -1,11 +1,18 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import '../css/Terminal.css'; // Assuming this path is correct
 import { ABOUT_ME, SKILLS, TERMINAL_COMMANDS } from '../constants'; // Import any constant data
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { AppContextData } from '../contexts/AppContexts';
+import { ROUTES_PREFIX } from '../constants';
+import { useNavigateTo } from '../hooks/useNavigateTo';
 
 const Terminal = () => {
 
+    const appContextData = useContext(AppContextData);
     const inputRef = useRef(null);
     const terminalRef = useRef(null);
+    const navigate = useNavigateTo();
 
     const [input, setInput] = useState('');
     const [history, setHistory] = useState([]);
@@ -24,9 +31,15 @@ const Terminal = () => {
             } else {
                 setHistory([])
             }
-            setInput(''); // Clear the input field
+            setInput('');
         }
     };
+
+    const handleClose = () => {
+        setInput('');
+        setHistory([]);
+        appContextData.setAppData(prev => ({...prev, showTerminal: false}));
+    }
 
     const executeCommand = (command) => {
         switch (command) {
@@ -36,6 +49,12 @@ const Terminal = () => {
                 return SKILLS;
             case 'contact':
                 return 'You can reach me at: ktanveerahmed8@gmail.com';
+            case 'open home':
+                navigate('/');
+                return 'Opening home...';
+            case 'open projects':
+                navigate('/projects');
+                return 'Opening projects...';
             case 'clear':
                 return '';
             case 'help':
@@ -53,6 +72,9 @@ const Terminal = () => {
 
     return (
         <div className="terminal" ref={terminalRef} onClick={handleTerminalClick}>
+            <div className='d-flex justify-content-end'>
+                <FontAwesomeIcon icon={faXmark} className='cursor-pointer' onClick={handleClose}/>
+            </div>
             <div className="terminal-history">
                 {history.map((entry, index) => (
                     <div key={index}>
