@@ -12,7 +12,7 @@ export const projectsData = [
     {
         id: 2,
         image: 'https://sont-uat.woah.org/assets/icons/people.jpg',
-        name: 'WOAH - Codes and Manuals',
+        name: 'WOAH - Standards Online Navigation Tool',
         description: 'The World Organisation for Animal Health (WOAH, founded as OIE) Terrestrial and Aquatic Animal Health Codes provide standards for the improvement of animal health and welfare and veterinary public health worldwide, including through standards for safe international trade in terrestrial and aquatic animals and their products. The manuals provide a standardised approach to the diagnosis of the diseases listed in the Terrestrial and Aquatic Codes.',
         url: 'https://sont-uat.woah.org/'
     }
