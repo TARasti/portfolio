@@ -28,6 +28,14 @@
     margin-top: 12px;
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
 .project-description {
     font-size: 16px;
     margin-bottom: 12px;

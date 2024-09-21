@@ -9,6 +9,10 @@
   --input-bg-color: #29293d;
 }
 
+.primary-color {
+  color: var(--primary-color)
+}
+
 body {
   background: var(--background-gradient);
   color: var(--text-color);

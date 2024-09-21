@@ -18,7 +18,7 @@ const NavigationBar = () => {
             <nav className="custsom-navbar">
                 <Row className='d-flex align-items-center'>
                     <Column col={4}>
-                        <div className="p-3">
+                        <div className="d-flex justify-content-start p-3">
                             <code>Made with ❤️ by Tanveer Ahmed Khan</code>
                         </div>
                     </Column>
@@ -52,7 +52,7 @@ const NavigationBar = () => {
                         </div>
                     </Column>
                     <Column col={4}>
-                        <div className="p-3">
+                        <div className="d-flex justify-content-end p-3">
                             <code>
                                 Copyright &copy; {new Date().getFullYear()}, <em>Developed by Tanveer Ahmed Khan</em>
                             </code>
