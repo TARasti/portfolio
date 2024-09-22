@@ -169,13 +169,16 @@ footer {
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
 }
 
-.custsom-navbar {
-  background-color: var(--card-bg-color);
-  border-top: 1px solid var(--border-color);
-  position: fixed;
+.navbar-container {
+  position: sticky;
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.custsom-navbar {
+  background-color: var(--card-bg-color);
+  border-top: 1px solid var(--border-color);
 }
 
 .custsom-navbar span {

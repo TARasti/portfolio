@@ -15,7 +15,7 @@ const RenderLayout = ({ children }) => {
                 )
             }
             {children}
-            <NavigationBar />
+                <NavigationBar />
         </>
     )
 }

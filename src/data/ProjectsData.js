@@ -9,6 +9,9 @@ export const projectsData = [
         name: 'WOAH - PVSIS',
         description: 'The Performance of Veterinary Services (PVS) Pathway, WOAH’s flagship capacity building programme for the sustainable improvement of national Veterinary Services and Aquatic Animal Health Services, has transformed into the PVS Information System. Through the PVSIS, WOAH has unlocked the data and insights contained in PVS Reports to allow more effective advocacy efforts for investment and sustainable funding and a deeper understanding of performance trends towards compliance with WOAH International Standards.',
         url: 'https://pvs.woah.org/',
+        status: 'Stage 1 Deployed - Stage 2 in Progress',
+        technologies: 'React.js, Node.js, MSSQL, Microsoft Azure, K8',
+        short_description: <li>The <strong>PVS Information System (PVSIS)</strong>, part of <strong>WOAH’s</strong> flagship PVS Pathway, enhances national Veterinary and Aquatic Animal Health Services by providing accessible data and insights from PVS Reports. This system supports effective advocacy for investment, sustainable funding, and a deeper understanding of performance trends in alignment with WOAH International Standards.</li>,
         is_expanded: false,
     },
     {
@@ -17,6 +20,9 @@ export const projectsData = [
         name: 'WOAH - Standards Online Navigation Tool',
         description: 'The World Organisation for Animal Health (WOAH, founded as OIE) Terrestrial and Aquatic Animal Health Codes provide standards for the improvement of animal health and welfare and veterinary public health worldwide, including through standards for safe international trade in terrestrial and aquatic animals and their products. The manuals provide a standardised approach to the diagnosis of the diseases listed in the Terrestrial and Aquatic Codes.',
         url: 'https://sont-uat.woah.org/',
+        status: 'In Progress',
+        technologies: 'React.js, Node.js, MSSQL, Microsoft Azure, K8',
+        short_description: <li>The <strong>World Organisation for Animal Health (WOAH)</strong>, originally founded as <strong>OIE</strong>, sets global standards for improving animal health, welfare, and veterinary public health. Its <strong>Terrestrial and Aquatic Animal Health Codes</strong> provide guidelines for safe international trade in animals and animal products. Additionally, WOAH manuals offer standardized methods for diagnosing diseases listed in these codes, ensuring consistent and effective disease management worldwide.</li>,
         is_expanded: false,
     }
 ];

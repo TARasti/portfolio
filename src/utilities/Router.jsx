@@ -4,6 +4,7 @@ import PageNotFound from "../pages/PageNotFound";
 import RenderLayout from "../layouts/RenderLayout";
 import Projects from "../pages/Projects";
 import { ROUTES_PREFIX } from "../constants";
+import ResumePage from "../pages/ResumePage";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     {
         path: `${ROUTES_PREFIX}/projects`,
         element: <RenderLayout><Projects /></RenderLayout>
+    },
+    {
+        path: `${ROUTES_PREFIX}/resume`,
+        element: <RenderLayout><ResumePage /></RenderLayout>
     },
     {
         path: "*",

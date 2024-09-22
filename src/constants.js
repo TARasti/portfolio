@@ -12,6 +12,9 @@ Commonds for navigating through website using 'open' keyword i.e open home;
 2: projects
 3: contact
 4: about
+5: resume
+'Get' Commands
+1: Get resume
 `;
 
 export const ROUTES_PREFIX = '/portfolio';
