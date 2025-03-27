@@ -11,6 +11,7 @@ const InfoCard = () => {
         let months = d2.getMonth() - d1.getMonth();
         if (months < 0) {
             years--;
+            months += 12;
         }
         return `${years} Years - ${months} Months`;
     }
