@@ -25,15 +25,6 @@ const Experience = () => {
                 <Row>
                     <Column col={6}>
                         <Organization 
-                            name='SysReforms International'
-                            experience={'2 Year - 5 Months'}
-                            position='Lead Software Engineer'
-                            url='https://www.sysreforms.com/'
-                            logo='https://www.sysreforms.com/images/Sysreforms logo 2.png'
-                            />
-                    </Column>
-                    <Column col={6}>
-                        <Organization 
                             name='Dopasi Foundation'
                             experience={getCurrentExperience()}
                             position='MIS/IT Specialist'
@@ -41,6 +32,15 @@ const Experience = () => {
                             logo='https://static.wixstatic.com/media/ed7121_f1302a9040b84a5cbcf889053056002e~mv2.png'
                             isActive={true}
                         />
+                    </Column>
+                    <Column col={6}>
+                        <Organization 
+                            name='SysReforms International'
+                            experience={'2 Year - 5 Months'}
+                            position='Lead Software Engineer'
+                            url='https://www.sysreforms.com/'
+                            logo='https://www.sysreforms.com/images/Sysreforms logo 2.png'
+                            />
                     </Column>
                 </Row>
             </Container>
