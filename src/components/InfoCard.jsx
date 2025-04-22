@@ -1,5 +1,6 @@
 import { technologiesData } from '../data/SlickSliderData';
 import cardImage from '../images/card-image.jpg'
+import Experience from '../pages/Experience';
 import SlickSlider from './SlickSlider';
 
 const InfoCard = () => {
@@ -20,9 +21,9 @@ const InfoCard = () => {
         <>
             <div className="card">
                 <div className="card-header">
-                    Tanveer Ahmed Khan - Lead Full Stack Developer
+                    Tanveer Ahmed Khan - MIS/IT Specialist
                     <p className='font-sx1 m-0'>
-                        <a className='text-muted hover' target='_blank' rel='noreferrer' href='https://www.sysreforms.com/'>SysReforms International</a>
+                        <a className='text-muted hover' target='_blank' rel='noreferrer' href='https://www.dopasi.org/'>Dopasi Foundation</a>
                     </p>
                 </div>
                 <div className="card-body d-flex">
@@ -45,12 +46,15 @@ const InfoCard = () => {
                                 <div className="card-text">
                                     <p>Hello! I'm <strong><code>Tanveer Ahmed Khan</code></strong>, a passionate web developer with a keen eye for design and a love for crafting beautiful and functional websites. Here you'll find a showcase of my projects, skills, and experiences. Feel free to explore and reach out if you have any questions or opportunities for collaboration.</p>
                                 </div>
+                                <div>
+                                    <Experience />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="card-footer">
-                    <SlickSlider data={technologiesData}/>
+                    <SlickSlider data={technologiesData} />
                 </div>
             </div>
         </>
