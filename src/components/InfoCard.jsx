@@ -29,7 +29,7 @@ const InfoCard = () => {
                 <div className="card-body d-flex">
                     <div className="row">
                         <div className='col-lg-4 col-ms-4'>
-                            <img className='card-image img-fluid my-1' src={cardImage} alt="card-image"></img>
+                            <img className='card-image img-fluid my-1' src={'https://media.licdn.com/dms/image/v2/D4D03AQEyqOkVNlpBww/profile-displayphoto-shrink_800_800/B4DZVrvpfkHkAg-/0/1741269410090?e=1750896000&v=beta&t=Qjm6l87Hm45aZfqdMUAzePrl2Wvaz8NwJ9LcPErbkTQ'} alt="card-image"></img>
                         </div>
                         <div className='col-lg-8 col-ms-8'>
                             <div className='my-1'>
