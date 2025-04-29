@@ -5,7 +5,6 @@ import RenderLayout from "../layouts/RenderLayout";
 import Projects from "../pages/Projects";
 import { ROUTES_PREFIX } from "../constants";
 import ResumePage from "../pages/ResumePage";
-import Skills from "../pages/Skills";
 
 const router = createBrowserRouter([
     {
