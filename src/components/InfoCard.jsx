@@ -1,5 +1,4 @@
 import { technologiesData } from '../data/SlickSliderData';
-import cardImage from '../images/card-image.jpg'
 import Experience from '../pages/Experience';
 import SlickSlider from './SlickSlider';
 
