@@ -43,4 +43,16 @@ export const technologiesData = [
         id: 11,
         html_content: <i className="fa-solid fa-database fa-2xl hover"></i>
     },
+    {
+        id: 12,
+        html_content: <i className="fa-brands fa-wix fa-2xl hover"></i>
+    },
+    {
+        id: 13,
+        html_content: <i className="fa-brands fa-wordpress fa-2xl hover"></i>
+    },
+    {
+        id: 13,
+        html_content: <i className="fa-brands fa-shopify fa-2xl hover"></i>
+    },
 ];
