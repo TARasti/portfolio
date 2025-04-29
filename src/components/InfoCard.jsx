@@ -1,5 +1,6 @@
 import { technologiesData } from '../data/SlickSliderData';
 import Experience from '../pages/Experience';
+import Skills from '../pages/Skills';
 import SlickSlider from './SlickSlider';
 
 const InfoCard = () => {
@@ -52,6 +53,8 @@ const InfoCard = () => {
                         </div>
                     </div>
                 </div>
+                <h2>Skills Set</h2>
+                <Skills />
                 <div className="card-footer">
                     <SlickSlider data={technologiesData} />
                 </div>

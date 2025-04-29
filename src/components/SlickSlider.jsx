@@ -2,12 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const SlickSlider = ({data}) => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 7,
         slidesToScroll: 1,
         autoplay: true,
         speed: 3000,
@@ -21,7 +22,7 @@ const SlickSlider = ({data}) => {
             {
                 data.map(d => (
                     <div className="my-3" key={d.id} >
-                        {d.html_content}
+                            {d.html_content}
                     </div>
                 ))
             }
